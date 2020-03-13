@@ -1,0 +1,208 @@
+/**************************** CSS Reset *****************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html{
+    font-family: 'Lato', sans-serif;
+}
+
+/***************************** Header *******************************/
+
+header{
+    text-align: center;
+    margin-bottom: 100px;
+}
+h1{
+    background-color: black;
+    font-size: 100px;
+    padding: 30px;
+    color: white;
+    font-family: 'Sedgwick Ave', cursive;
+    font-weight: 100;
+}
+nav{
+    background:white;
+    padding: 20px 0 200px 0;
+}
+nav a{
+    font-family: 'Sedgwick Ave', cursive;
+    text-decoration: none;
+    color:black;
+    margin: 0 50px 0 50px;
+    font-size: 20px;
+}
+nav a:hover{
+    border-bottom: 2px solid black;
+}
+
+/***************************** Body **********************************/
+
+section{
+    background: transparent;
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    padding: 0 0 20px 0;
+}
+.blogPosts{
+    text-align: center;
+    
+}
+h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 60px 0 30px 0;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Sedgwick Ave', cursive;
+}
+.postContent{
+    display: block;
+    width: 600px;
+    text-align: left;
+    margin: 0 auto;
+}
+.btns{
+    text-align: left;
+    margin: 20px 0 0px 180px;
+}
+.likeBtn{
+    height: 30px;
+    width: 50px;
+    background: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-family: 'Sedgwick Ave', cursive;
+
+}
+.likeBtn:hover{
+    background:white;
+    color: black;
+}
+.dislikeBtn{
+    height: 30px;
+    width: 55px;
+    background: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-family: 'Sedgwick Ave', cursive;
+}
+.dislikeBtn:hover{
+    background: white;
+    color: black;
+}
+.score{
+    text-align: left;
+    margin: 5px 0 0 216px;
+}
+
+/***************************** Footer **********************************/
+
+footer{
+    margin: 200px 0 0 0;
+    background: black;
+    padding: 20px 0 20px 0;
+}
+.copyright{
+    margin-left: 20px;
+    color: white;
+    float: left;
+}
+.madeBy{
+    color: white;
+    float: right;
+    margin-right: 20px;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: " ";
+    clear: both;
+    height: 0;
+    font-size: 0;
+    }
+
+/************************* After Click Changes ******************************/
+.hide{
+    display: none;
+}
+.navPaddingLowerPx{
+    padding-bottom: 0px;
+}
+
+/***************************** Contact **********************************/
+
+form{
+    text-align: center;
+}
+.contact{ 
+    font-size: 25px;
+    color: black;
+    font-family: 'Sedgwick Ave', cursive;
+    margin-top: 10px;
+}
+.inputBox{
+    border: 1px solid black;
+    height: 50px;
+}
+
+/***************************** Contact Page *******************************/
+ .navTwo{
+    background:white;
+    padding: 20px 0 20px 0;
+ }
+ form{
+     margin-top: -50px;
+ }
+
+ /***************************** Contact Page *******************************/
+ @media (max-width: 600px){
+    h1 {
+        background-color: black;
+        font-size: 12vw;
+        padding: 50px;
+        color: white;
+        font-family: 'Sedgwick Ave', cursive;
+        font-weight: 100;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        padding: 20px 0 100px 0;
+    }
+    nav a {
+        font-family: 'Sedgwick Ave', cursive;
+        text-decoration: none;
+        color: black;
+        margin: 40px 50px 0 50px;
+        font-size: 30px;
+    }
+    .postContent{
+        display: block;
+        width: 70%;
+        text-align: left;
+        margin: 0 auto;
+    }
+ }
+ 
