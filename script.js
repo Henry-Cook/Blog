@@ -15,9 +15,13 @@ function middleBtn(){
     footer = document.getElementById('foot').classList.toggle('hide');
 };
 
-/*function contactPage(){
-    var contact, bodyHide;
-    contact = document.getElementById('contactForm').classList.toggle('hide');
-    bodyHide = document.getElementById('bodyHide').classList.toggle('hide');
-};
-*/
+
+//var likeBtn = document.getElementById('likeButton');
+//var likes = document.getElementById('score');
+var count = 0;
+
+function likeCounter(){
+    var likes = document.getElementById('likes');
+    count =+ 1;
+    likes.innerHTML = count;
+}
